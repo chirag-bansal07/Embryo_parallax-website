@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.apogee {
+  background-color: black;
+  color: #a2a2ec;
+  padding: 50px;
+}
+.apogee-para {
+  color: aliceblue;
+}
+.apogee-content {
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+.apogee-content p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.apogee-content h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.partner-para {
+  color: aliceblue;
+}
+.apogee-partners {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 5rem;
+}
+.partner-img {
+  width: 15vw;
+  height: 12rem;
+  object-fit: contain;
+}
+.white {
+  filter: grayscale(1) invert(1);
+}
+.apogee .flex {
+  gap: 0;
+  justify-content: center;
+  margin-top: 1rem;
+}

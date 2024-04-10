@@ -1,0 +1,182 @@
+.cardsocial {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: 0.3s;
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: 0.3s;
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: 0.3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128c7e;
+  transition-duration: 0.3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.buttonsocial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: none;
+  background-color: #30c04f;
+}
+
+.button:hover {
+  background-color: #2bac47;
+}
+
+.center-body {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3%;
+  height: 100%;
+}
+body {
+}
+.loader-shape-3 {
+  position: relative;
+  display: flex;
+  width: 70px;
+  height: 50px;
+}
+.loco {
+  margin-left: 2rem;
+}
+.flexcol p {
+  font-size: 1.1rem;
+}
+.loader-shape-3:before {
+  width: 25px;
+  height: 25px;
+  border-radius: 100% 100% 100% 0;
+  box-shadow: 0px 0px 0px 2px black;
+  animation: anm-SL-3-move 1s linear infinite;
+  top: 50%;
+  left: 150%;
+  transform: translate(-50%, -50%) rotate(-46deg);
+  margin-top: 25px;
+}
+.loader-shape-3:before,
+.loader-shape-3:after {
+  position: absolute;
+  content: "";
+}
+@keyframes anm-SL-3-move {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -5px;
+  }
+  100% {
+    top: 0;
+  }
+}
+.flex {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  gap: 2rem;
+  align-items: center;
+}
+.loc {
+  margin-left: 1.5rem;
+}
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.flexcol {
+  display: flex;
+  flex-direction: column;
+  height: 28vw;
+  width: 23vw;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 30px;
+  background: lightgrey;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+}
+@media (max-width: 1024px) {
+  .flexcol {
+    margin: 0;
+    height: 34vw;
+    width: 30vw;
+  }
+  .contact {
+    justify-content: center;
+  }
+}
+.contact h1 {
+  color: rgb(71, 71, 71);
+  font-size: 2rem;
+}
+p {
+  color: grey;
+}
